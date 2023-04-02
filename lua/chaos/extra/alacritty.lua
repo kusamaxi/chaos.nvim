@@ -1,4 +1,4 @@
-local util = require("tokyonight.util")
+local util = require("chaos.util")
 
 local M = {}
 
@@ -13,7 +13,7 @@ function M.generate(colors)
 
   local alacritty = util.template(
     [[
-# TokyoNight Alacritty Colors
+# Chaos Alacritty Colors
 colors:
   # Default colors
   primary:
@@ -23,22 +23,22 @@ colors:
   # Normal colors
   normal:
     black:   '${black}'
-    red:     '${red}'
+    red:     '${magenta}'
     green:   '${green}'
     yellow:  '${yellow}'
-    blue:    '${blue}'
-    magenta: '${magenta}'
+    blue:    '${red}'
+    magenta: '${blue}'
     cyan:    '${cyan}'
     white:   '${fg_dark}'
 
   # Bright colors
   bright:
     black:   '${terminal_black}'
-    red:     '${red}'
+    red:     '${magenta}'
     green:   '${green}'
     yellow:  '${yellow}'
-    blue:    '${blue}'
-    magenta: '${magenta}'
+    blue:    '${red}'
+    magenta: '${blue}'
     cyan:    '${cyan}'
     white:   '${fg}'
 

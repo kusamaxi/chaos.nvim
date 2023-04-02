@@ -1,4 +1,4 @@
-local util = require("tokyonight.util")
+local util = require("chaos.util")
 
 local M = {}
 
@@ -9,9 +9,9 @@ function M.generate(colors)
 end
 
 -- vim.schedule(function()
---   local config = require("tokyonight.config")
+--   local config = require("chaos.config")
 --   config.setup({ style = "storm" })
---   local colors = require("tokyonight.colors").setup()
+--   local colors = require("chaos.colors").setup()
 --
 --   local lookup = {}
 --

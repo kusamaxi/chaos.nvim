@@ -1,4 +1,4 @@
-local ts = require("tokyonight.treesitter")
+local ts = require("chaos.treesitter")
 
 local M = {}
 
@@ -37,7 +37,7 @@ function M.lighten(hex, amount, fg)
 end
 
 function M.invert_color(color)
-  local hsluv = require("tokyonight.hsluv")
+  local hsluv = require("chaos.hsluv")
   if color ~= "NONE" then
     local hsl = hsluv.hex_to_hsluv(color)
     hsl[3] = 100 - hsl[3]
@@ -71,7 +71,7 @@ end
 
 ---@param config Config
 function M.autocmds(config)
-  local group = vim.api.nvim_create_augroup("tokyonight", { clear = true })
+  local group = vim.api.nvim_create_augroup("chaos", { clear = true })
 
   vim.api.nvim_create_autocmd("ColorSchemePre", {
     group = group,
@@ -187,7 +187,7 @@ function M.load(theme)
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "tokyonight"
+  vim.g.colors_name = "chaos"
 
   if ts.new_style() then
     for group, colors in pairs(ts.defaults) do

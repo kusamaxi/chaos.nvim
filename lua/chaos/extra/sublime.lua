@@ -46,7 +46,7 @@ M.template = [[
 	<key>name</key>
 	<string>chaOS</string>
 	<key>semanticClass</key>
-	<string>enki.theme.tokyo</string>
+	<string>enki.theme.chaos</string>
 	<key>settings</key>
 	<array>
 		<dict>

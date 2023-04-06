@@ -1,7 +1,7 @@
 # 🏙 chaOS
 
 A dark and light Neovim theme written in Lua ported from the Visual Studio Code
-[chaOS](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
+[chaOS](https://github.com/enkia/chaos-night-vscode-theme) theme. Includes
 extra themes for Kitty, Alacritty, iTerm and Fish.
 
 ## ✨ Features

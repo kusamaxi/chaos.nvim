@@ -1,28 +1,8 @@
-# 🏙 Tokyo Night
+# 🏙 Chaos
 
-A dark and light [Neovim](https://github.com/neovim/neovim) theme written in
-[Lua](https://www.lua.org) ported from the [Visual Studio Code
-TokyoNight](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
-[extra](#-extras) themes for [Kitty](https://sw.kovidgoyal.net/kitty/conf.html),
-[Alacritty](https://github.com/alacritty/alacritty),
-[iTerm](https://iterm2.com/) and
-[Fish](https://fishshell.com/docs/current/index.html).
-
-## Storm
-
-![image](https://user-images.githubusercontent.com/292349/115295095-3a9e5080-a10e-11eb-9aed-6054488c46ce.png)
-
-## Night
-
-![image](https://user-images.githubusercontent.com/292349/115295327-7afdce80-a10e-11eb-89b3-2591262bf95a.png)
-
-## Moon
-
-![image](https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png)
-
-## Day
-
-![image](https://user-images.githubusercontent.com/292349/115996270-78c6c480-a593-11eb-8ed0-7d1400b058f5.png)
+A dark and light Neovim theme written in Lua ported from the Visual Studio Code
+[chaOS](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
+extra themes for Kitty, Alacritty, iTerm and Fish.
 
 ## ✨ Features
 
@@ -65,35 +45,16 @@ TokyoNight](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
 
 ## 📦 Installation
 
-<<<<<<< HEAD
 Install the theme with your preferred package manager, such as
 [folke/lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "folke/tokyonight.nvim",
+  "kusamaxi/chaos.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
 }
-=======
-Install the theme with your preferred package manager:
-
-[vim-plug](https://github.com/junegunn/vim-plug)
-
-```vim
-Plug 'kusamaxi/chaos.nvim', { 'branch': 'main' }
-```
-
-[packer](https://github.com/wbthomason/packer.nvim)
-
-```lua
-<<<<<<< HEAD
-use 'kusamaxi/tokyonight.nvim'
->>>>>>> b57be1b (rg Folke -l | xargs sed -i 's/Folke Lemaitre/kusamaxi/g')
-=======
-use 'kusamaxi/chaos.nvim'
->>>>>>> 653de28 (replace more naming into chaos theme)
 ```
 
 ## 🚀 Usage
@@ -101,53 +62,19 @@ use 'kusamaxi/chaos.nvim'
 ### Vim Script
 
 ```vim
-<<<<<<< HEAD
-colorscheme tokyonight
-
-" There are also colorschemes for the different styles.
-colorscheme tokyonight-night
-colorscheme tokyonight-storm
-colorscheme tokyonight-day
-colorscheme tokyonight-moon
-=======
 " Vim Script
 colorscheme chaos
-
-" There are also colorschemes for the different styles
-colorscheme chaos-night
-colorscheme chaos-storm
-colorscheme chaos-day
-colorscheme chaos-moon
->>>>>>> 653de28 (replace more naming into chaos theme)
 ```
 
 ### [Lua](https://www.lua.org)
 
 ```lua
-<<<<<<< HEAD
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme chaos]]
 ```
 
 #### External Plugins
 
 ##### [Barbecue](https://github.com/utilyre/barbecue.nvim)
-=======
--- Lua
-vim.cmd[[colorscheme chaos]]
-```
-
-To enable the `chaos` theme for `Barbecue`:
->>>>>>> 653de28 (replace more naming into chaos theme)
-
-```lua
--- Lua
-require('barbecue').setup {
-  -- ... your barbecue config
-  theme = 'chaos',
-  -- ... your barbecue config
-}
-```
-
 ##### [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 
 ```lua
@@ -161,7 +88,6 @@ require('lualine').setup {
 }
 ```
 
-<<<<<<< HEAD
 ##### [Lightline](https://github.com/itchyny/lightline.vim)
 =======
 To enable the `chaos` colorscheme for `Lightline`:
@@ -174,12 +100,8 @@ let g:lightline = {'colorscheme': 'chaos'}
 
 ## ⚙️ Configuration
 
-<<<<<<< HEAD
-> ❗️ Set the configuration **BEFORE** loading the color scheme with `colorscheme tokyonight`.
-=======
 > ❗️ configuration needs to be set **BEFORE** loading the color scheme with
 > `colorscheme chaos`
->>>>>>> 653de28 (replace more naming into chaos theme)
 
 The theme offers four styles: [storm](#storm), [moon](#moon), [night](#night),
 and [day](#day).
@@ -187,8 +109,10 @@ and [day](#day).
 The [day](#day) style is used when `{ style = "day" }` is passed to
 `setup(options)` or when `vim.o.background = "light"`.
 
-[TokyoNight](https://github.com/folke/tokyonight.nvim) uses the default options,
+<<<<<<< HEAD
+[chaos](https://github.com/folke/chaos.nvim) uses the default options,
 unless `setup` is explicitly called.
+=======
 
 ```lua
 require("chaos").setup({
@@ -237,16 +161,6 @@ How the highlight groups are calculated:
 1. These `colors` are utilized to generate the highlight groups.
 1. `config.on_highlights(highlights, colors)` can be used to override highlight
    groups.
-
-<<<<<<< HEAD
-For default values of `colors` and `highlights`, please consult the
-[storm](extras/lua/tokyonight_storm.lua),
-[moon](extras/lua/tokyonight_moon.lua),
-[night](extras/lua/tokyonight_night.lua), and
-[day](extras/lua/tokyonight_day.lua) themes.
-=======
-Please refer to default values for `colors` and `highlights` for the [storm](extras/lua/chaos_storm.lua), [moon](extras/lua/chaos_moon.lua), [night](extras/lua/chaos_night.lua), [day](extras/lua/chaos_day.lua)
->>>>>>> 653de28 (replace more naming into chaos theme)
 
 ### Settings and color alteration demonstration
 

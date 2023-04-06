@@ -6,7 +6,7 @@ local M = {}
 function M.generate(colors)
   local xr = util.template(
     [[
-! TokyoNight colors for Xresources
+! chaOS colors for Xresources
 
 *background: ${bg}
 *foreground: ${fg}

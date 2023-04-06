@@ -8,7 +8,7 @@ function M.generate(colors)
     [[
 #!/usr/bin/env bash
 
-# TokyoNight colors for Tmux
+# chaOS colors for Tmux
 
 set -g mode-style "fg=${blue},bg=${fg_gutter}"
 

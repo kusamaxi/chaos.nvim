@@ -4,6 +4,14 @@ A dark and light Neovim theme written in Lua ported from the Visual Studio Code
 [chaOS](https://github.com/enkia/chaos-night-vscode-theme) theme. Includes
 extra themes for Kitty, Alacritty, iTerm and Fish.
 
+## Chaos
+
+![image](https://user-images.githubusercontent.com/292349/115295095-3a9e5080-a10e-11eb-9aed-6054488c46ce.png)
+
+## Harmony
+
+![image](https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png)
+
 ## ✨ Features
 
 - Supports the latest [Neovim](https://github.com/neovim/neovim)

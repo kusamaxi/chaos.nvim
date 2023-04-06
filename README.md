@@ -1,4 +1,4 @@
-# 🏙 Chaos
+# 🏙 chaOS
 
 A dark and light Neovim theme written in Lua ported from the Visual Studio Code
 [chaOS](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes

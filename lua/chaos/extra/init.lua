@@ -83,9 +83,9 @@ function M.setup()
     for style, style_name in pairs(styles) do
       config.setup({ style = style })
       local colors = require("chaos.colors").setup({ transform = true })
-      local fname = extra .. "/chaos_" .. style .. "." .. ext
+      local fname = extra .. "/chaos_" .. style .. "." .. info.ext
       colors["_upstream_url"] = "https://github.com/kusamaxi/chaos.nvim/raw/main/extras/" .. fname
-      colors["_style_name"] = "Chaos" .. style_name
+      colors["_style_name"] = "chaOS" .. style_name
       write(plugin.generate(colors), fname)
     end
   end

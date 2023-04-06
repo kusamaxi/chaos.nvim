@@ -89,9 +89,6 @@ require('lualine').setup {
 ```
 
 ##### [Lightline](https://github.com/itchyny/lightline.vim)
-=======
-To enable the `chaos` colorscheme for `Lightline`:
->>>>>>> 653de28 (replace more naming into chaos theme)
 
 ```vim
 " Vim Script
@@ -108,11 +105,6 @@ and [day](#day).
 
 The [day](#day) style is used when `{ style = "day" }` is passed to
 `setup(options)` or when `vim.o.background = "light"`.
-
-<<<<<<< HEAD
-[chaos](https://github.com/folke/chaos.nvim) uses the default options,
-unless `setup` is explicitly called.
-=======
 
 ```lua
 require("chaos").setup({

@@ -1,4 +1,4 @@
-local c = require("tokyonight.colors").setup({ transform = true })
+local c = require("chaos.colors").setup({ transform = true })
 
 local M = {
   normal = { bg = c.none, fg = c.fg_dark },

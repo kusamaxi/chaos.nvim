@@ -82,14 +82,18 @@ Install the theme with your preferred package manager:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'kusamaxi/tokyonight.nvim', { 'branch': 'main' }
+Plug 'kusamaxi/chaos.nvim', { 'branch': 'main' }
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
+<<<<<<< HEAD
 use 'kusamaxi/tokyonight.nvim'
 >>>>>>> b57be1b (rg Folke -l | xargs sed -i 's/Folke Lemaitre/kusamaxi/g')
+=======
+use 'kusamaxi/chaos.nvim'
+>>>>>>> 653de28 (replace more naming into chaos theme)
 ```
 
 ## 🚀 Usage
@@ -97,6 +101,7 @@ use 'kusamaxi/tokyonight.nvim'
 ### Vim Script
 
 ```vim
+<<<<<<< HEAD
 colorscheme tokyonight
 
 " There are also colorschemes for the different styles.
@@ -104,23 +109,41 @@ colorscheme tokyonight-night
 colorscheme tokyonight-storm
 colorscheme tokyonight-day
 colorscheme tokyonight-moon
+=======
+" Vim Script
+colorscheme chaos
+
+" There are also colorschemes for the different styles
+colorscheme chaos-night
+colorscheme chaos-storm
+colorscheme chaos-day
+colorscheme chaos-moon
+>>>>>>> 653de28 (replace more naming into chaos theme)
 ```
 
 ### [Lua](https://www.lua.org)
 
 ```lua
+<<<<<<< HEAD
 vim.cmd[[colorscheme tokyonight]]
 ```
 
 #### External Plugins
 
 ##### [Barbecue](https://github.com/utilyre/barbecue.nvim)
+=======
+-- Lua
+vim.cmd[[colorscheme chaos]]
+```
+
+To enable the `chaos` theme for `Barbecue`:
+>>>>>>> 653de28 (replace more naming into chaos theme)
 
 ```lua
 -- Lua
 require('barbecue').setup {
   -- ... your barbecue config
-  theme = 'tokyonight',
+  theme = 'chaos',
   -- ... your barbecue config
 }
 ```
@@ -132,22 +155,31 @@ require('barbecue').setup {
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'tokyonight'
+    theme = 'chaos'
     -- ... your lualine config
   }
 }
 ```
 
+<<<<<<< HEAD
 ##### [Lightline](https://github.com/itchyny/lightline.vim)
+=======
+To enable the `chaos` colorscheme for `Lightline`:
+>>>>>>> 653de28 (replace more naming into chaos theme)
 
 ```vim
 " Vim Script
-let g:lightline = {'colorscheme': 'tokyonight'}
+let g:lightline = {'colorscheme': 'chaos'}
 ```
 
 ## ⚙️ Configuration
 
+<<<<<<< HEAD
 > ❗️ Set the configuration **BEFORE** loading the color scheme with `colorscheme tokyonight`.
+=======
+> ❗️ configuration needs to be set **BEFORE** loading the color scheme with
+> `colorscheme chaos`
+>>>>>>> 653de28 (replace more naming into chaos theme)
 
 The theme offers four styles: [storm](#storm), [moon](#moon), [night](#night),
 and [day](#day).
@@ -159,7 +191,7 @@ The [day](#day) style is used when `{ style = "day" }` is passed to
 unless `setup` is explicitly called.
 
 ```lua
-require("tokyonight").setup({
+require("chaos").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
   style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
@@ -206,16 +238,20 @@ How the highlight groups are calculated:
 1. `config.on_highlights(highlights, colors)` can be used to override highlight
    groups.
 
+<<<<<<< HEAD
 For default values of `colors` and `highlights`, please consult the
 [storm](extras/lua/tokyonight_storm.lua),
 [moon](extras/lua/tokyonight_moon.lua),
 [night](extras/lua/tokyonight_night.lua), and
 [day](extras/lua/tokyonight_day.lua) themes.
+=======
+Please refer to default values for `colors` and `highlights` for the [storm](extras/lua/chaos_storm.lua), [moon](extras/lua/chaos_moon.lua), [night](extras/lua/chaos_night.lua), [day](extras/lua/chaos_day.lua)
+>>>>>>> 653de28 (replace more naming into chaos theme)
 
 ### Settings and color alteration demonstration
 
 ```lua
-require("tokyonight").setup({
+require("chaos").setup({
   -- use the night style
   style = "night",
   -- disable italic for functions
@@ -234,7 +270,7 @@ require("tokyonight").setup({
 ### [Borderless Telescope](https://github.com/nvim-telescope/telescope.nvim/wiki/Gallery#borderless) example
 
 ```lua
-require("tokyonight").setup({
+require("chaos").setup({
   on_highlights = function(hl, c)
     local prompt = "#2d3149"
     hl.TelescopeNormal = {
@@ -295,8 +331,8 @@ You can easily use the color palette for other plugins inside your
 [Neovim](https://github.com/neovim/neovim) configuration:
 
 ```lua
-local colors = require("tokyonight.colors").setup() -- pass in any of the config options as explained above
-local util = require("tokyonight.util")
+local colors = require("chaos.colors").setup() -- pass in any of the config options as explained above
+local util = require("chaos.util")
 
 aplugin.background = colors.bg_dark
 aplugin.my_error = util.lighten(colors.red1, 0.3) -- number between 0 and 1. 0 results in white, 1 results in red1
@@ -311,13 +347,13 @@ generate themes for the different styles.
 
 How to add a new extra template:
 
-1. Create a file like `lua/tokyonight/extra/cool-app.lua`.
+1. Create a file like `lua/chaos/extra/cool-app.lua`.
 2. Add the name and output file extension to the `extras` table in
-   `lua/tokyonight/extra/init.lua`.
+   `lua/chaos/extra/init.lua`.
 3. Run the following command to generate new [extra](#-extras) themes:
 
    ```sh
-   nvim --headless "+lua require('tokyonight.extra').setup()" +qa
+   nvim --headless "+lua require('chaos.extra').setup()" +qa
    ```
 
 4. Check the newly created themes in the `extra/` directory. Please **DO NOT**

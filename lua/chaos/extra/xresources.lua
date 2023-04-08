@@ -15,7 +15,7 @@ function M.generate(colors)
 *color1: ${red}
 *color2: ${green}
 *color3: ${yellow}
-*color4: ${blue}
+*color4: ${pink}
 *color5: ${magenta}
 *color6: ${cyan}
 *color7: ${fg_dark}
@@ -24,7 +24,7 @@ function M.generate(colors)
 *color9: ${red}
 *color10: ${green}
 *color11: ${yellow}
-*color12: ${blue}
+*color12: ${pink}
 *color13: ${magenta}
 *color14: ${cyan}
 *color15: ${fg}

@@ -23,13 +23,13 @@ module.exports =  {
     {
       types: ["function"],
       style: {
-        color: "${blue}",
+        color: "${pink}",
       },
     },
     {
       types: ["symbol"],
       style: {
-        color: "${blue1}",
+        color: "${pink1}",
       },
     },
     {
@@ -53,7 +53,7 @@ module.exports =  {
     {
       types: ["operator"],
       style: {
-        color: "${blue5}",
+        color: "${pink5}",
       },
     },
     {

@@ -10,9 +10,9 @@ function M.generate(colors)
 {
     "background": "${bg}",
     "black": "${black}",
-    "blue": "${blue}",
+    "pink": "${pink}",
     "brightBlack": "${terminal_black}",
-    "brightBlue": "${blue}",
+    "brightBlue": "${pink}",
     "brightCyan": "${cyan}",
     "brightGreen": "${green}",
     "brightPurple": "${purple}",

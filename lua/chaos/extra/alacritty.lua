@@ -26,8 +26,8 @@ colors:
     red:     '${magenta}'
     green:   '${green}'
     yellow:  '${yellow}'
-    blue:    '${red}'
-    magenta: '${blue}'
+    pink:    '${red}'
+    magenta: '${pink}'
     cyan:    '${cyan}'
     white:   '${fg_dark}'
 
@@ -37,8 +37,8 @@ colors:
     red:     '${magenta}'
     green:   '${green}'
     yellow:  '${yellow}'
-    blue:    '${red}'
-    magenta: '${blue}'
+    pink:    '${red}'
+    magenta: '${pink}'
     cyan:    '${cyan}'
     white:   '${fg}'
 

@@ -17,7 +17,7 @@ function M.generate(colors)
         "${red}",
         "${green}",
         "${yellow}",
-        "${blue}",
+        "${pink}",
         "${magenta}",
         "${cyan}",
         "${fg_dark}",
@@ -25,7 +25,7 @@ function M.generate(colors)
         "${red}",
         "${green}",
         "${yellow}",
-        "${blue}",
+        "${pink}",
         "${magenta}",
         "${cyan}",
         "${fg}"

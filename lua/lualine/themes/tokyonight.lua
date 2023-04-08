@@ -4,8 +4,8 @@ local config = require("chaos.config").options
 local chaos = {}
 
 chaos.normal = {
-  a = { bg = colors.blue, fg = colors.black },
-  b = { bg = colors.fg_gutter, fg = colors.blue },
+  a = { bg = colors.pink, fg = colors.black },
+  b = { bg = colors.fg_gutter, fg = colors.pink },
   c = { bg = colors.bg_statusline, fg = colors.fg_sidebar },
 }
 
@@ -35,7 +35,7 @@ chaos.terminal = {
 }
 
 chaos.inactive = {
-  a = { bg = colors.bg_statusline, fg = colors.blue },
+  a = { bg = colors.bg_statusline, fg = colors.pink },
   b = { bg = colors.bg_statusline, fg = colors.fg_gutter, gui = "bold" },
   c = { bg = colors.bg_statusline, fg = colors.fg_gutter },
 }

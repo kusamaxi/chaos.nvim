@@ -23,14 +23,14 @@ cursor ${fg}
 cursor_text_color ${bg}
 
 # Tabs
-active_tab_background ${blue}
+active_tab_background ${pink}
 active_tab_foreground ${bg_dark}
 inactive_tab_background ${bg_highlight}
 inactive_tab_foreground ${dark3}
 #tab_bar_background ${black}
 
 # Windows
-active_border_color ${blue}
+active_border_color ${pink}
 inactive_border_color ${bg_highlight}
 
 # normal
@@ -38,7 +38,7 @@ color0 ${black}
 color1 ${red}
 color2 ${green}
 color3 ${yellow}
-color4 ${blue}
+color4 ${pink}
 color5 ${magenta}
 color6 ${cyan}
 color7 ${fg_dark}
@@ -48,7 +48,7 @@ color8 ${terminal_black}
 color9 ${red}
 color10 ${green}
 color11 ${yellow}
-color12 ${blue}
+color12 ${pink}
 color13 ${magenta}
 color14 ${cyan}
 color15 ${fg}

@@ -2,42 +2,98 @@ local util = require("chaos.util")
 
 local M = {}
 
-
-
 ---@class Palette
 M.default = {
   none = "NONE",
   bg_dark = "#000000",
-  bg = "#000000",
+  bg = "#111111",
+  bg_highlight = "#222222",
+  terminal_black = "#010101",
   fg = "#F8229B",
   fg_dark = "#a9b1d6",
   fg_gutter = "#3b4261",
   dark3 = "#555555",
   comment = "#565f89",
   dark5 = "#737aa2",
-  pink = "#e6007a",
-  green = "#56F39A",
-  lime = "#D3FF33",
-  blue = "#0077ff",
-  purple = "#552BBF",
-  cyan = "#00ffe1",
-  white = "#FFFFFF",
-  gray = "#555555",
-  light_blue = "#00B2FF",
-}
-git = { change = "#6183bb", add = "#449dab", delete = "#914c54" },
-gitSigns == {
-  add = "#266d6a",
-  change = "#536c9e",
-  delete = "#b2555b",
-},
+  blue0 = "#3d59a1",
+  blue = "#7aa2f7",
+  cyan = "#7dcfff",
+  blue1 = "#2ac3de",
+  blue2 = "#0db9d7",
+  blue5 = "#89ddff",
+  blue6 = "#b4f9f8",
+  blue7 = "#394b70",
+  magenta = "#bb9af7",
+  magenta2 = "#ff007c",
+  purple = "#9d7cd8",
+  orange = "#ff9e64",
+  yellow = "#e0af68",
+  green = "#9ece6a",
+  green1 = "#73daca",
+  green2 = "#41a6b5",
+  teal = "#1abc9c",
+  red = "#f7768e",
+  red1 = "#db4b4b",
+  git = { change = "#6183bb", add = "#449dab", delete = "#914c54" },
+  gitSigns = {
+    add = "#266d6a",
+    change = "#536c9e",
+    delete = "#b2555b",
+  },
 }
 
 M.night = {
-  bg = "#000000",
-  bg_dark = "#000000",
+  bg = "#1a1b26",
+  bg_dark = "#16161e",
 }
 M.day = M.night
+
+M.harmony = function()
+  local ret = {
+    none = "NONE",
+    bg_dark = "#1e2030", --
+    bg = "#222436", --
+    bg_highlight = "#2f334d", --
+    terminal_black = "#444a73", --
+    fg = "#c8d3f5", --
+    fg_dark = "#828bb8", --
+    fg_gutter = "#3b4261",
+    dark3 = "#545c7e",
+    comment = "#7a88cf", --
+    dark5 = "#737aa2",
+    blue0 = "#3e68d7", --
+    blue = "#82aaff", --
+    cyan = "#86e1fc", --
+    blue1 = "#65bcff", --
+    blue2 = "#0db9d7",
+    blue5 = "#89ddff",
+    blue6 = "#b4f9f8", --
+    blue7 = "#394b70",
+    purple = "#fca7ea", --
+    magenta2 = "#ff007c",
+    magenta = "#c099ff", --
+    orange = "#ff966c", --
+    yellow = "#ffc777", --
+    green = "#c3e88d", --
+    green1 = "#4fd6be", --
+    green2 = "#41a6b5",
+    teal = "#4fd6be", --
+    red = "#ff757f", --
+    red1 = "#c53b53", --
+  }
+  ret.comment = util.blend(ret.comment, ret.bg, "bb")
+  ret.git = {
+    change = util.blend(ret.blue, ret.bg, "ee"),
+    add = util.blend(ret.green, ret.bg, "ee"),
+    delete = util.blend(ret.red, ret.bg, "dd"),
+  }
+  ret.gitSigns = {
+    change = util.blend(ret.blue, ret.bg, "66"),
+    add = util.blend(ret.green, ret.bg, "66"),
+    delete = util.blend(ret.red, ret.bg, "aa"),
+  }
+  return ret
+end
 
 ---@return ColorScheme
 function M.setup(opts)
@@ -75,12 +131,12 @@ function M.setup(opts)
 
   -- Sidebar and Floats are configurable
   colors.bg_sidebar = config.options.styles.sidebars == "transparent" and colors.none
-  or config.options.styles.sidebars == "dark" and colors.bg_dark
-  or colors.bg
+    or config.options.styles.sidebars == "dark" and colors.bg_dark
+    or colors.bg
 
   colors.bg_float = config.options.styles.floats == "transparent" and colors.none
-  or config.options.styles.floats == "dark" and colors.bg_dark
-  or colors.bg
+    or config.options.styles.floats == "dark" and colors.bg_dark
+    or colors.bg
 
   colors.bg_visual = util.darken(colors.blue0, 0.4)
   colors.bg_search = colors.blue0

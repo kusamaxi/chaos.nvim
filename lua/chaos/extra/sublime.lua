@@ -10,7 +10,7 @@ end
 
 -- vim.schedule(function()
 --   local config = require("chaos.config")
---   config.setup({ style = "storm" })
+--   config.setup({ style = "chaos" })
 --   local colors = require("chaos.colors").setup()
 --
 --   local lookup = {}

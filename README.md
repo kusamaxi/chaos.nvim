@@ -36,28 +36,27 @@ TokyoNight](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
 
 ### 🍭 Extras
 
-<!-- extras:start -->
-- [Alacritty](https://github.com/alacritty/alacritty) ([alacritty](extras/alacritty))
-- [Delta](https://github.com/dandavison/delta) ([delta](extras/delta))
-- [Dunst](https://dunst-project.org/) ([dunst](extras/dunst))
-- [Fish](https://fishshell.com/docs/current/index.html) ([fish](extras/fish))
-- [Fish Themes](https://fishshell.com/docs/current/interactive.html#syntax-highlighting) ([fish_themes](extras/fish_themes))
-- [Foot](https://codeberg.org/dnkl/foot) ([foot](extras/foot))
-- [GitUI](https://github.com/extrawurst/gitui) ([gitui](extras/gitui))
-- [iTerm](https://iterm2.com/) ([iterm](extras/iterm))
-- [Kitty](https://sw.kovidgoyal.net/kitty/conf.html) ([kitty](extras/kitty))
-- [Lua Table for testing](https://www.lua.org) ([lua](extras/lua))
-- [Prism](https://prismjs.com) ([prism](extras/prism))
-- [Sublime Text](https://www.sublimetext.com/docs/themes) ([sublime](extras/sublime))
-- [Terminator](https://gnome-terminator.readthedocs.io/en/latest/config.html) ([terminator](extras/terminator))
-- [Tilix](https://github.com/gnunn1/tilix) ([tilix](extras/tilix))
-- [Tmux](https://github.com/tmux/tmux/wiki) ([tmux](extras/tmux))
-- [WezTerm](https://wezfurlong.org/wezterm/config/) ([wezterm](extras/wezterm))
-- [Windows Terminal](https://aka.ms/terminal-documentation) ([windows_terminal](extras/windows_terminal))
-- [Xfce Terminal](https://docs.xfce.org/apps/terminal/advanced) ([xfceterm](extras/xfceterm))
-- [Xresources](https://wiki.archlinux.org/title/X_resources) ([xresources](extras/xresources))
-- [Zathura](https://pwmt.org/projects/zathura/) ([zathura](extras/zathura))
-<!-- extras:end -->
+- [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [LSP Diagnostics](https://neovim.io/doc/user/lsp.html)
+- [LSP Trouble](https://github.com/kusamaxi/lsp-trouble.nvim)
+- [LSP Saga](https://github.com/glepnir/lspsaga.nvim)
+- [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
+- [Git Gutter](https://github.com/airblade/vim-gitgutter)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+- [WhichKey](https://github.com/liuchengxu/vim-which-key)
+- [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [Dashboard](https://github.com/glepnir/dashboard-nvim)
+- [BufferLine](https://github.com/akinsho/nvim-bufferline.lua)
+- [Barbecue](https://github.com/utilyre/barbecue.nvim)
+- [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [Lightline](https://github.com/itchyny/lightline.vim)
+- [Neogit](https://github.com/TimUntersberger/neogit)
+- [vim-sneak](https://github.com/justinmk/vim-sneak)
+- [Fern](https://github.com/lambdalisue/fern.vim)
+- [Barbar](https://github.com/romgrk/barbar.nvim)
+- [Scrollbar](https://github.com/petertriho/nvim-scrollbar)
+- [Mini](https://github.com/echasnovski/mini.nvim)
 
 ## ⚡️ Requirements
 
@@ -66,6 +65,7 @@ TokyoNight](https://github.com/enkia/tokyo-night-vscode-theme) theme. Includes
 
 ## 📦 Installation
 
+<<<<<<< HEAD
 Install the theme with your preferred package manager, such as
 [folke/lazy.nvim](https://github.com/folke/lazy.nvim):
 
@@ -76,6 +76,20 @@ Install the theme with your preferred package manager, such as
   priority = 1000,
   opts = {},
 }
+=======
+Install the theme with your preferred package manager:
+
+[vim-plug](https://github.com/junegunn/vim-plug)
+
+```vim
+Plug 'kusamaxi/tokyonight.nvim', { 'branch': 'main' }
+```
+
+[packer](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use 'kusamaxi/tokyonight.nvim'
+>>>>>>> b57be1b (rg Folke -l | xargs sed -i 's/Folke Lemaitre/kusamaxi/g')
 ```
 
 ## 🚀 Usage

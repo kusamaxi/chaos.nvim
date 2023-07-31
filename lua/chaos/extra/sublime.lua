@@ -40,7 +40,7 @@ M.template = [[
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Folke Lemaitre (http://github.com/folke)</string>
+	<string>kusamaxi (http://github.com/kusamaxi)</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>name</key>

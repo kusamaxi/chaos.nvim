@@ -10,7 +10,7 @@ function M.generate(colors)
 
 ## name: ${_style_name}
 ## license: MIT
-## author: Folke Lemaitre
+## author: kusamaxi
 ## upstream: ${_upstream_url}
 
 

@@ -89,7 +89,6 @@ USAGE                                      *chaos.nvim-chaos-usage*
 VIM SCRIPT ~
 
 >vim
-<<<<<<< HEAD:doc/tokyonight.nvim.txt
     colorscheme chaos
     
     " There are also colorschemes for the different styles.

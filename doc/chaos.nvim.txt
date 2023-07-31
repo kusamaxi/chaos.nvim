@@ -1,54 +1,41 @@
-*tokyonight.nvim.txt*       For Neovim >= 0.8.0      Last change: 2023 July 13
+*chaos.nvim.txt*      For Neovim >= 0.8.0      Last change: 2023 July 31
 
 ==============================================================================
-Table of Contents                          *tokyonight.nvim-table-of-contents*
+Table of Contents                          *chaos.nvim-table-of-contents*
 
-1. Tokyo Night                                   |tokyonight.nvim-tokyo-night|
-  - Storm                                  |tokyonight.nvim-tokyo-night-storm|
-  - Night                                  |tokyonight.nvim-tokyo-night-night|
-  - Moon                                    |tokyonight.nvim-tokyo-night-moon|
-  - Day                                      |tokyonight.nvim-tokyo-night-day|
-  - Features                            |tokyonight.nvim-tokyo-night-features|
-  - Requirements                    |tokyonight.nvim-tokyo-night-requirements|
-  - Installation                    |tokyonight.nvim-tokyo-night-installation|
-  - Usage                                  |tokyonight.nvim-tokyo-night-usage|
-  - Configuration                  |tokyonight.nvim-tokyo-night-configuration|
-  - Overriding Colors & Highlight Groups|tokyonight.nvim-tokyo-night-overriding-colors-&-highlight-groups|
-  - Extras                                |tokyonight.nvim-tokyo-night-extras|
-  - Contributing                    |tokyonight.nvim-tokyo-night-contributing|
+1. Chaos                                   chaos.nvim-chaos|
+  - Chaos                                  |chaos.nvim-chaos-chaos|
+  - Night                                  |chaos.nvim-chaos-harmony
+  - Features                            |chaos.nvim-chaos-features|
+  - Requirements                    |chaos.nvim-chaos-requirements|
+  - Installation                    |chaos.nvim-chaos-installation|
+  - Usage                                  |chaos.nvim-chaos-usage|
+  - Configuration                  |chaos.nvim-chaos-configuration|
+  - Overriding Colors & Highlight Groups|chaos.nvim-chaos-overriding-colors-&-highlight-groups|
+  - Extras                                |chaos.nvim-chaos-extras|
+  - Contributing                    |chaos.nvim-chaos-contributing|
 
 ==============================================================================
-1. Tokyo Night                                   *tokyonight.nvim-tokyo-night*
+1. Chaos                                  *chaos.nvim-chaos*
 
-A dark and light Neovim <https://github.com/neovim/neovim> theme written in Lua
-<https://www.lua.org> ported from the Visual Studio Code TokyoNight
-<https://github.com/enkia/tokyo-night-vscode-theme> theme. Includes
-|tokyonight.nvim-extra| themes for Kitty
-<https://sw.kovidgoyal.net/kitty/conf.html>, Alacritty
-<https://github.com/alacritty/alacritty>, iTerm <https://iterm2.com/> and Fish
-<https://fishshell.com/docs/current/index.html>.
+A dark(chaos) and light(harmony) Neovim theme written in Lua forked from Chaos theme.
+Includes extra themes for Kitty, Alacritty, iTerm and Fish.
 
 
-STORM                                      *tokyonight.nvim-tokyo-night-storm*
+CHAOS                                      *chaos.nvim-chaos-chaos*
 
 
-NIGHT                                      *tokyonight.nvim-tokyo-night-night*
+HARMONY                                      *chaos.nvim-chaos-harmony*
 
 
-MOON                                        *tokyonight.nvim-tokyo-night-moon*
-
-
-DAY                                          *tokyonight.nvim-tokyo-night-day*
-
-
-FEATURES                                *tokyonight.nvim-tokyo-night-features*
+FEATURES                                *chaos.nvim-chaos-features*
 
 - Supports the latest Neovim <https://github.com/neovim/neovim>
     0.9.0 <https://github.com/neovim/neovim/releases/tag/v0.9.0> features.
 - Enhances terminal colors.
 - Introduces a darker background option for sidebar-like windows.
 - Supports all major plugins.
-- Provides TokyoNight <https://github.com/folke/tokyonight.nvim>
+- Provides TokyoNight <https://github.com//tokyonight.nvim>
     |tokyonight.nvim-extras| for numerous other applications.
 
 
@@ -76,47 +63,44 @@ EXTRAS ~
 - Zathura <https://pwmt.org/projects/zathura/> (zathura <extras/zathura>)
 
 
-REQUIREMENTS                        *tokyonight.nvim-tokyo-night-requirements*
+REQUIREMENTS                        *chaos.nvim-chaos-requirements*
 
 - Neovim <https://github.com/neovim/neovim> >=
     0.7.2 <https://github.com/neovim/neovim/releases/tag/v0.7.2>
 
 
-INSTALLATION                        *tokyonight.nvim-tokyo-night-installation*
+INSTALLATION                        *chaos.nvim-chaos-installation*
 
 Install the theme with your preferred package manager, such as folke/lazy.nvim
 <https://github.com/folke/lazy.nvim>
 
 >lua
     {
-      "folke/tokyonight.nvim",
+      "kusamaxi/chaos.nvim",
       lazy = false,
       priority = 1000,
       opts = {},
     }
-<
 
 
-USAGE                                      *tokyonight.nvim-tokyo-night-usage*
+USAGE                                      *chaos.nvim-chaos-usage*
 
 
 VIM SCRIPT ~
 
 >vim
-    colorscheme tokyonight
+<<<<<<< HEAD:doc/tokyonight.nvim.txt
+    colorscheme chaos
     
     " There are also colorschemes for the different styles.
-    colorscheme tokyonight-night
-    colorscheme tokyonight-storm
-    colorscheme tokyonight-day
-    colorscheme tokyonight-moon
-<
+    colorscheme chaos-chaos
+    colorscheme chaos-harmony
 
 
 LUA ~
 
 >lua
-    vim.cmd[[colorscheme tokyonight]]
+    vim.cmd[[colorscheme chaos]]
 <
 
 
@@ -124,59 +108,58 @@ EXTERNAL PLUGINS
 
 
 BARBECUE
+    -- Lua
+    vim.cmd[[colorscheme chaos]]
+<
+
+To enable the `chaos` theme for `Barbecue`
 
 >lua
     -- Lua
     require('barbecue').setup {
       -- ... your barbecue config
-      theme = 'tokyonight',
+      theme = 'chaos',
       -- ... your barbecue config
     }
 <
 
 
 LUALINE
-
 >lua
     -- Lua
     require('lualine').setup {
       options = {
         -- ... your lualine config
-        theme = 'tokyonight'
+        theme = 'chaos'
         -- ... your lualine config
       }
     }
 <
 
-
 LIGHTLINE
+To enable the `chaos` colorscheme for `Lightline`
 
 >vim
     " Vim Script
-    let g:lightline = {'colorscheme': 'tokyonight'}
+    let g:lightline = {'colorscheme': 'chaos'}
 <
 
 
-CONFIGURATION                      *tokyonight.nvim-tokyo-night-configuration*
+CONFIGURATION                      *chaos.nvim-chaos-configuration*
 
 
   Set the configuration **BEFORE** loading the color scheme with `colorscheme
   tokyonight`.
-The theme offers four styles: |tokyonight.nvim-storm|, |tokyonight.nvim-moon|,
-|tokyonight.nvim-night|, and |tokyonight.nvim-day|.
+The theme offers 2 styles: |chaos.nvim-chaos| and |chaos.nvim-harmony|
 
-The |tokyonight.nvim-day| style is used when `{ style = "day" }` is passed to
-`setup(options)` or when `vim.o.background = "light"`.
-
-TokyoNight <https://github.com/folke/tokyonight.nvim> uses the default options,
+Chaos <https://github.com/kusamaxi/chaos.nvim> uses the default options,
 unless `setup` is explicitly called.
 
 >lua
-    require("tokyonight").setup({
+    require("chaos").setup({
       -- your configuration comes here
       -- or leave it empty to use the default settings
-      style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-      light_style = "day", -- The theme is used when the background is set to light
+      style = "chaos", -- The theme comes in two styles, daytime-theme `harmony` and a night-time `chaos`
       transparent = false, -- Enable this to disable setting the background color
       terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
       styles = {
@@ -210,7 +193,7 @@ unless `setup` is explicitly called.
 <
 
 
-OVERRIDING COLORS & HIGHLIGHT GROUPS*tokyonight.nvim-tokyo-night-overriding-colors-&-highlight-groups*
+OVERRIDING COLORS & HIGHLIGHT GROUPS*chaos.nvim-chaos-overriding-colors-&-highlight-groups*
 
 How the highlight groups are calculated:
 
@@ -220,18 +203,11 @@ override them using `config.on_colors(colors)`.
 3. `config.on_highlights(highlights, colors)` can be used to override highlight
 groups.
 
-For default values of `colors` and `highlights`, please consult the storm
-<extras/lua/tokyonight_storm.lua>, moon <extras/lua/tokyonight_moon.lua>, night
-<extras/lua/tokyonight_night.lua>, and day <extras/lua/tokyonight_day.lua>
-themes.
-
 
 SETTINGS AND COLOR ALTERATION DEMONSTRATION ~
 
 >lua
-    require("tokyonight").setup({
-      -- use the night style
-      style = "night",
+    require("chaos").setup({
       -- disable italic for functions
       styles = {
         functions = {}
@@ -249,7 +225,7 @@ SETTINGS AND COLOR ALTERATION DEMONSTRATION ~
 BORDERLESS TELESCOPE EXAMPLE ~
 
 >lua
-    require("tokyonight").setup({
+    require("chaos").setup({
       on_highlights = function(hl, c)
         local prompt = "2d3149"
         hl.TelescopeNormal = {
@@ -297,7 +273,7 @@ To have undercurls show up and in color, add the following to your Tmux
 <
 
 
-EXTRAS                                    *tokyonight.nvim-tokyo-night-extras*
+EXTRAS                                    *chaos.nvim-chaos-extras*
 
 Extra color configs for Kitty <https://sw.kovidgoyal.net/kitty/conf.html>,
 Alacritty <https://github.com/alacritty/alacritty>, Fish
@@ -309,15 +285,15 @@ You can easily use the color palette for other plugins inside your Neovim
 <https://github.com/neovim/neovim> configuration:
 
 >lua
-    local colors = require("tokyonight.colors").setup() -- pass in any of the config options as explained above
-    local util = require("tokyonight.util")
+    local colors = require("chaos.colors").setup() -- pass in any of the config options as explained above
+    local util = require("chaos.util")
     
     aplugin.background = colors.bg_dark
     aplugin.my_error = util.lighten(colors.red1, 0.3) -- number between 0 and 1. 0 results in white, 1 results in red1
 <
 
 
-CONTRIBUTING                        *tokyonight.nvim-tokyo-night-contributing*
+CONTRIBUTING                        *chaos.nvim-chaos-contributing*
 
 Pull requests are welcome.
 
@@ -344,9 +320,8 @@ How to add a new extra template:
 commit them, as they are already automatically built by the CI.
 
 
-
 ==============================================================================
-2. Links                                               *tokyonight.nvim-links*
+2. Links                                               *chaos.nvim-links*
 
 1. *image*: https://user-images.githubusercontent.com/292349/115295095-3a9e5080-a10e-11eb-9aed-6054488c46ce.png
 2. *image*: https://user-images.githubusercontent.com/292349/115295327-7afdce80-a10e-11eb-89b3-2591262bf95a.png

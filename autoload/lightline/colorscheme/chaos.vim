@@ -1,2 +1,2 @@
 let s:palette = v:lua.require('lightline.colorscheme.chaos')
-let g:lightline#colorscheme#tokyonight#palette = lightline#colorscheme#fill(s:palette)
+let g:lightline#colorscheme#chaos#palette = lightline#colorscheme#fill(s:palette)
